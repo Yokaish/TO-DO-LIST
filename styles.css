@@ -232,3 +232,23 @@ li {
         width: 100%;
     }
 }
+
+@media (min-width: 660px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        width: 60%;
+    }
+    main {
+        width: 60%;
+        background-color: rgba(70, 70, 70, 0.096);
+        height: 100vh;
+    }
+
+    .list-container {
+        width: 100%;
+    }
+}

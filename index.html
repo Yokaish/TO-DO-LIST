@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header data-aos="fade-down" data-aos-duration="1000">
+        <p class="header-title">TO DO LIST</p>
+    </header>
+    <main data-aos="fade-up" data-aos-duration="1000">
+        <form action="">
+            <input id="input-item" type="text" placeholder="What do you have planned?">
+            <p id="error" ></p>
+            <button id="save-item-btn">SAVE TASK</button>
+        </form>
+        
+        <div class="list-container">
+            <h2>TO DO</h2>
+            <hr/>
+            <ul id="to-do-list">
+                <p id="initial-to-do-msg">-----------------</p>
+            </ul>
+            <h2>DONE</h2>
+            <hr>
+            <ul id="done-list">
+                <p id="initial-done-msg">-----------------</p>
+            </ul>
+        </div>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

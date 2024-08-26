@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #000000;
+    --branco: #F5F5F5;
+    --preto: #1E1E1E;
+    --gradient: linear-gradient(90deg, rgba(158,40,156,1) 0%, rgba(34,225,237,1) 54%, rgba(225,123,19,1) 100%);
+    --fonte: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url(img/background-list.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--branco);
+    font-family: var(--fonte);
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, 
+        linear-gradient(90deg, rgba(158,40,156,1) 0%, rgba(34,225,237,1) 54%, rgba(225,123,19,1) 100%) border-box;
+    border-bottom: 3px solid transparent;
+    margin-bottom: 40px;
+    
+}
+
+.header-title {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+main {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+}
+
+hr {
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--cor-primaria);
+    width: 100%;
+
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+}
+
+#input-item {
+    background: none;
+    border: 1px solid var(--branco);
+    padding: 14px;
+    width: 100%;
+    border-radius:  50px;
+    color: var(--branco);
+    font-family: var(--fonte);
+}
+
+#input-item::placeholder {
+    background: none;
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte);
+    font-size: 14px;
+    display: block;
+    color: var(--branco);
+    font-weight: 300;
+}
+
+#input-item:focus {
+    outline: none;
+    background: none;
+}
+
+
+
+#save-item-btn {
+    border: none;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, 
+                linear-gradient(90deg, rgba(158,40,156,1) 0%, rgba(34,225,237,1) 54%, rgba(225,123,19,1) 100%) border-box;
+    border-bottom: 3px solid transparent;
+    padding: 14px;
+    border-radius: 30px;
+    color: var(--branco);
+    cursor: pointer;
+    width: 140px;
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    width: 100%;
+    padding: 0 40px 0 40px;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.list-container {
+    width: 100vw;
+    padding: 0 40px 0 40px;
+}
+
+.item-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-top: 10px;
+}
+
+.container-to-do-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.edit-del-btn {
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: none;
+} 
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.item-data {
+    font-size: 14px;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-custom {
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--branco);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.checked {
+    background-color: var(--cor-primaria);
+    position: relative;
+}
+
+.checked::after {
+    content: "";
+    position: absolute;
+    left: 35%;
+    top: 2%;
+    width: 4px;
+    height: 12px;
+    border-top: 2px solid var(--branco);
+    border-left: 2px solid var(--branco);
+    transform: rotate(-140deg);
+}
+
+
+#initial-done-msg {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#initial-to-do-msg {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.item-data {
+    color: #d6d6d6;
+}

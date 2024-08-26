@@ -33,7 +33,7 @@ header {
     background-color: var(--cor-primaria);
     color: var(--branco);
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, 
         linear-gradient(90deg, rgba(158,40,156,1) 0%, rgba(34,225,237,1) 54%, rgba(225,123,19,1) 100%) border-box;
     border-bottom: 3px solid transparent;
@@ -125,7 +125,7 @@ form {
     align-items: center;
     gap: 20px; 
     width: 100%;
-    padding: 0 40px 0 40px;
+    padding: 0 20px 0 20px;
 }
 
 li {
@@ -135,7 +135,7 @@ li {
 
 .list-container {
     width: 100vw;
-    padding: 0 40px 0 40px;
+    padding: 0 20px 0 20px;
 }
 
 .item-list-container {

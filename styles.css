@@ -37,7 +37,6 @@ header {
     background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, 
         linear-gradient(90deg, rgba(158,40,156,1) 0%, rgba(34,225,237,1) 54%, rgba(225,123,19,1) 100%) border-box;
     border-bottom: 3px solid transparent;
-    margin-bottom: 40px;
     
 }
 
@@ -47,6 +46,7 @@ header {
 }
 
 main {
+    padding-top: 40px;
     gap: 20px;
     display: flex;
     align-items: center;
@@ -211,4 +211,24 @@ li {
 
 .item-data {
     color: #d6d6d6;
+}
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        width: 40%;
+    }
+    main {
+        width: 40%;
+        background-color: rgba(70, 70, 70, 0.096);
+        height: 100vh;
+    }
+
+    .list-container {
+        width: 100%;
+    }
 }

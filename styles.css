@@ -220,10 +220,10 @@ li {
     }
 
     header {
-        width: 40%;
+        width: 20%;
     }
     main {
-        width: 40%;
+        width: 20%;
         background-color: rgba(70, 70, 70, 0.096);
         height: 100vh;
     }
